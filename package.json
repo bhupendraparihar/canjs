@@ -66,6 +66,7 @@
     "can-namespace": "1.0.0",
     "can-observation": "3.1.5",
     "can-param": "1.0.1",
+    "can-react-component": "0.1.1",
     "can-route": "3.0.11",
     "can-route-pushstate": "3.0.3",
     "can-set": "1.2.0",
@@ -92,7 +93,8 @@
     "can-view-parser": "3.1.0",
     "can-view-scope": "3.1.4",
     "can-view-target": "3.0.7",
-    "can-zone": "0.6.7"
+    "can-zone": "0.6.7",
+    "react-view-model": "0.5.1"
   },
   "devDependencies": {
     "bit-docs": "^0.0.7",
@@ -106,6 +108,8 @@
     "http-server": "^0.10.0",
     "jquery": "2.x - 3.x",
     "jquery-ui": "^1.12.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "socket.io-client": "^1.7.2",
     "steal": "^0.16.44",
     "steal-qunit": "^0.1.1",
@@ -157,10 +161,11 @@
       "bit-docs-tag-package": "^0.0.5"
     },
     "glob": {
-      "pattern": "{node_modules,docs}/{can-*,steal-stache}/**/*.{js,md}",
+      "pattern": "{node_modules,docs}/{can-*,steal-stache,react-view-model}/**/*.{js,md}",
       "ignore": [
         "node_modules/can-wait/examples/**/*",
-        "node_modules/can-*/dist/**/*"
+        "node_modules/can-*/dist/**/*",
+        "node_modules/*/node_modules/**/*"
       ]
     },
     "altVersions": {
